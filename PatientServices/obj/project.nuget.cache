@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xeSXZarpurKso54T9YKAzDMwVbkozGJAZkcyfxaTlzgYFqQh2whKgrJ30OWOat8cOnTCfBmZqVkbfrQ8krZFFA==",
+  "success": true,
+  "projectFilePath": "C:\\Avijit\\git\\PatientService\\PatientServices\\PatientServices\\PatientServices.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aviji\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
