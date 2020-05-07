@@ -1,7 +1,6 @@
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.csprojAssemblyReference.cache
 C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.AssemblyInfoInputs.cache
 C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.AssemblyInfo.cs
 C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.RazorTargetAssemblyInfo.cache
@@ -47,3 +46,6 @@ C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreap
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Avijit\git\PatientService\PatientServices\PatientServices\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.csproj.CoreCompileInputs.cache
+C:\Avijit\git\PatientService\PatientServices\PatientServices\obj\Debug\netcoreapp3.1\PatientServices.MvcApplicationPartsAssemblyInfo.cache
