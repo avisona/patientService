@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ActiveDebugProfile>PatientServices</ActiveDebugProfile>
     <ShowAllFiles>false</ShowAllFiles>
-    <NameOfLastUsedPublishProfile>PatientServices - Web Deploy</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>PatientServices2020 - Web Deploy</NameOfLastUsedPublishProfile>
     <Controller_SelectedScaffolderID>ApiControllerWithActionsScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Controller</Controller_SelectedScaffolderCategoryPath>
     <WebStackScaffolding_ControllerDialogWidth>600</WebStackScaffolding_ControllerDialogWidth>
