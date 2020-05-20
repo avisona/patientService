@@ -6,10 +6,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using PatientServices.Data;
+using PatientServices.Models;
 
 namespace PatientServices
 {
@@ -26,17 +30,34 @@ namespace PatientServices
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddDbContext<DBConnect>(options =>options.UseSqlServer(Configuration.GetConnectionString("PatientDatabase")));
+
+            services.AddScoped<IPatient, PatientData>();
+
+            services.AddSwaggerGen(
+                setupAction => {
+
+                    setupAction.SwaggerDoc("APIDoc",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Avijit Swagger",
+                        Version = "1"
+                    });
+
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+            //if (env.IsDevelopment())
+            //{
+            //    app.UseDeveloperExceptionPage();
+            //}
+            app.UseDeveloperExceptionPage();
 
-            //   app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseRouting();
 
@@ -46,6 +67,16 @@ namespace PatientServices
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(
+                setupAction => {
+                    setupAction.SwaggerEndpoint(
+                        "/swagger/APIDoc/swagger.json",
+                        "Avijit Swagger"
+                        );
+                }
+                ); 
         }
     }
 }
